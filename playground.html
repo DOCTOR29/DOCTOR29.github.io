@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playground — Naveed Islam</title>
+  <meta name="description" content="Two small games built for Naveed Islam's portfolio: Gate Rush and Thrift Flip.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2316140f'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='24' text-anchor='middle' fill='%23d4f15c'%3ENI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.add("motion");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" data-title="Home"><span class="brand-mark" aria-hidden="true">NI</span>Naveed Islam</a>
+      <nav aria-label="Primary">
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#apps">Apps</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="playground.html" data-title="Playground">Play</a></li>
+          <li><a class="nav-cta" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-barba="wrapper">
+  <main id="main" data-barba="container" data-barba-namespace="playground" style="--tint:#d4f15c">
+
+    <section class="cs-hero" aria-labelledby="cs-title">
+      <div class="wrap" data-hero>
+        <a class="back" href="index.html" data-title="Home">← Home</a>
+        <p class="label">Off the clock</p>
+        <h1 id="cs-title">Playground</h1>
+        <p class="pitch">Two tiny games built for this site, each a nod to something I shipped. Your best scores stay in this browser.</p>
+      </div>
+    </section>
+
+    <section class="cs-section game" aria-labelledby="g1" data-game="gate-rush">
+      <div class="wrap">
+        <div class="cs-split">
+          <div>
+            <p class="label">Game 01 · inspired by Ticket Verifier</p>
+            <h2 id="g1">Gate Rush</h2>
+          </div>
+          <div class="prose"><p>Tickets roll toward the gate. <b>Scan the valid ones</b> as they pass through the scanner, and let <b>used</b> and <b>cancelled</b> tickets go by. Miss a valid ticket or admit a bad one and you lose a life. It gets faster as you go.</p></div>
+        </div>
+        <div class="game-box">
+          <canvas tabindex="0" aria-label="Gate Rush game. Focus here and press Space or Enter to scan, or tap the game." role="img"></canvas>
+          <div class="game-bar">
+            <button class="btn btn-primary" type="button" data-scan>Scan <span class="kbd" aria-hidden="true">Space</span></button>
+            <dl class="game-stats">
+              <div><dt class="label">Score</dt><dd data-score>0</dd></div>
+              <div><dt class="label">Lives</dt><dd data-lives aria-label="lives">●●●</dd></div>
+              <div><dt class="label">Best</dt><dd data-best>0</dd></div>
+            </dl>
+          </div>
+          <p class="game-status" role="status" aria-live="polite" data-status>Press Scan to open the gate.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section game" aria-labelledby="g2" data-game="thrift-flip">
+      <div class="wrap">
+        <div class="cs-split">
+          <div>
+            <p class="label">Game 02 · inspired by ToFlip</p>
+            <h2 id="g2">Thrift Flip</h2>
+          </div>
+          <div class="prose"><p>Twelve pre-loved finds, face down. <b>Flip two at a time</b> and match the pairs in as few moves as you can.</p></div>
+        </div>
+        <div class="game-box">
+          <div class="flip-grid" data-grid></div>
+          <div class="game-bar">
+            <button class="btn btn-ghost" type="button" data-reset>Shuffle again</button>
+            <dl class="game-stats">
+              <div><dt class="label">Moves</dt><dd data-moves>0</dd></div>
+              <div><dt class="label">Best</dt><dd data-best>–</dd></div>
+            </dl>
+          </div>
+          <p class="game-status" role="status" aria-live="polite" data-status></p>
+        </div>
+      </div>
+    </section>
+
+    <a class="next-project" href="index.html#work" data-title="Work">
+      <div class="wrap"><p class="label">Back to work</p><h2>Selected work</h2></div>
+    </a>
+  </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap"><span>© 2026 Naveed Islam</span><span>Full Stack Developer · Product Builder</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

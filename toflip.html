@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToFlip case study — Naveed Islam</title>
+  <meta name="description" content="ToFlip: a multi-vendor thrift fashion marketplace built solo by Naveed Islam in Flutter and Supabase.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2316140f'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='24' text-anchor='middle' fill='%23d4f15c'%3ENI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.add("motion");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" data-title="Home"><span class="brand-mark" aria-hidden="true">NI</span>Naveed Islam</a>
+      <nav aria-label="Primary">
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#apps">Apps</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="playground.html" data-title="Playground">Play</a></li>
+          <li><a class="nav-cta" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-barba="wrapper">
+  <main id="main" data-barba="container" data-barba-namespace="toflip" style="--tint:#ffb4ad">
+
+    <section class="cs-hero" aria-labelledby="cs-title">
+      <div class="wrap">
+        <a class="back" href="index.html#apps" data-title="Home">← All work</a>
+        <div class="cs-hero-grid">
+          <div data-hero>
+            <p class="label">Case study 03 · Thrift fashion marketplace</p>
+            <h1 id="cs-title">ToFlip</h1>
+            <p class="pitch">A multi-vendor marketplace for thrifted, vintage and pre-loved fashion, where the feed is the product.</p>
+            <div class="btn-row">
+              <a class="store" href="https://play.google.com/store/apps/details?id=in.toflip.app" target="_blank" rel="noopener"><span><small>Get it on</small>Google Play</span><span class="sr-only">(opens in new tab)</span></a>
+            </div>
+          </div>
+          <div class="cs-visual" data-art>
+            <div class="bg-block" aria-hidden="true"></div>
+            <div class="phones-trio">
+              <div class="phone"><div class="screen"><img src="assets/screens/toflip-feed.jpg" alt="ToFlip For you feed showing a Raw Denim Trucker Jacket listing with related products" width="720" height="1565"></div></div>
+              <div class="phone"><div class="screen"><img src="assets/screens/toflip-product.jpg" alt="ToFlip product page for a White Pleated Tennis Skirt with size, brand, condition and seller details" width="720" height="1565"></div></div>
+              <div class="phone"><div class="screen"><img src="assets/screens/toflip-tracking.jpg" alt="ToFlip Track Order screen with a progress timeline from Ordered to Delivered" width="720" height="1565"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <dl class="facts" data-stagger>
+        <div><dt class="label">Role</dt><dd>Solo developer</dd></div>
+        <div><dt class="label">Platform</dt><dd>Flutter · Android</dd></div>
+        <div><dt class="label">Stack</dt><dd>Flutter, Riverpod, Supabase</dd></div>
+        <div><dt class="label">Status</dt><dd>Live on Google Play</dd></div>
+      </dl>
+    </div>
+
+    <section class="tour" aria-labelledby="tour-title" data-tour data-duration="27.8" style="--tour-h:1950vh">
+      <div class="wrap tour-sticky">
+        <div class="tour-copy">
+          <p class="label">Product tour · <span class="tour-hint">scroll to play</span></p>
+          <h2 id="tour-title">ToFlip, <em class="serif-em">in motion</em></h2>
+          <ol class="tour-steps">
+            <li data-start="0"><p class="label">01 — Discover</p><h3>A feed worth scrolling</h3><p>The "For you" feed puts big product cards first. Cards flip over to show details, items go to the cart in one tap, and related products sit underneath.</p></li>
+            <li data-start="6.8"><p class="label">02 — Product</p><h3>Everything a thrift buyer checks</h3><p>An image gallery, size, brand, condition and category at a glance, the seller's profile, reviews and similar items.</p></li>
+            <li data-start="11.8"><p class="label">03 — Checkout</p><h3>Cart to order, in a few taps</h3><p>Check out from the cart, pay online, and land on a confirmation screen with the order number.</p></li>
+            <li data-start="15.6"><p class="label">04 — Seller studio</p><h3>Sellers are users too</h3><p>A seller dashboard with listings, sales, revenue, coupons and per-product analytics: views, visitors, devices and traffic sources.</p></li>
+          </ol>
+          <div class="tour-bar" aria-hidden="true"><i></i></div>
+          <button class="tour-skip" type="button" data-skip-tour>Skip tour <span aria-hidden="true">↓</span></button>
+        </div>
+        <div class="tour-device">
+          <div class="phone"><div class="screen">
+            <video src="assets/video/toflip-tour.mp4" poster="assets/video/toflip-poster.jpg" muted playsinline preload="auto" controls aria-label="Screen recording of the ToFlip app: browsing the feed, a product page, checkout and the seller studio"></video>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="overview">
+      <div class="wrap cs-split" data-reveal>
+        <h2 id="overview">The product</h2>
+        <div class="prose">
+          <p>ToFlip is a <b>multi-vendor thrift fashion marketplace</b> for mobile. Buyers discover and buy second-hand clothing from individual sellers and verified stores; sellers list items, manage inventory, track orders and chat with buyers.</p>
+          <p>I built it on my own, end to end: the Flutter app, the Supabase backend, and the role system behind customers, sellers, moderators and admins.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="flows">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="flows">Three journeys</h2>
+          <div class="prose"><p>Buyers, sellers and the community each get first-class flows. None of them is bolted on to the others.</p></div>
+        </div>
+        <ol class="flow" data-stagger>
+          <li><h3>Buy</h3><p>Masonry discovery feed → search &amp; filters → product detail with condition, size and reviews → cart, address book, shipping choice and coupon → order tracking timeline and GST invoice PDF.</p></li>
+          <li><h3>Sell</h3><p>4-step listing wizard → inventory management (stock, edit, delete) → seller dashboard with revenue, orders, views and follower analytics → own storefront page.</p></li>
+          <li><h3>Connect</h3><p>Stories and social posts with likes, threaded comments and saves → chat with sellers, including product cards and price offers → push notifications.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="roles">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="roles">Four roles</h2>
+          <div class="prose"><p>Trust is what makes thrift commerce work, so moderation and admin tools were built in from the start.</p></div>
+        </div>
+        <ul class="feature-grid" data-stagger>
+          <li><b>Customer</b><span>Browse, search, wishlist, cart &amp; checkout, orders, chat, offers, follow vendors, reviews.</span></li>
+          <li><b>Seller</b><span>Everything a customer can do, plus listings, inventory, dashboard analytics and replying to reviews.</span></li>
+          <li><b>Moderator</b><span>Hide or restore reviews, resolve or dismiss reports, view moderation logs.</span></li>
+          <li><b>Super Admin</b><span>Approve, suspend and verify sellers; moderate listings; oversee orders and disputes; categories, banners and settings.</span></li>
+          <li><b>Trust signals</b><span>Verified-purchase, featured and pinned review badges; condition labels; ratings.</span></li>
+          <li><b>Polish</b><span>Light &amp; dark themes, liquid-glass bottom navigation, skeleton loaders, hero transitions.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="hood">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="hood">Under the hood</h2>
+          <div class="prose"><p>A Flutter app with <b>Riverpod</b> state management and <b>GoRouter</b> navigation, backed by <b>Supabase</b>. Store builds and uploads are automated with <b>Fastlane</b>.</p></div>
+        </div>
+        <figure class="arch" data-reveal>
+          <figcaption><span class="label"><b>ToFlip — app layers &amp; backend</b></span><span class="label">Fig. 02</span></figcaption>
+          <ol class="arch-rows">
+            <li class="arch-row"><p class="label">Navigation</p>
+              <div class="nodes">
+                <div class="node dark" data-id="nav" data-links="sc-feed sc-cart sc-sell"><b>GoRouter + 5-tab shell</b><span>Home · Search · Sell · Inbox · Profile</span></div>
+                <div class="node" data-id="auth" data-links="st-user"><b>Auth flow</b><span>Splash → onboarding → login → interests</span></div>
+              </div></li>
+            <li class="arch-row"><p class="label">Screens</p>
+              <div class="nodes">
+                <div class="node" data-id="sc-feed" data-links="st-prod"><b>Feed &amp; search</b><span>Stories, posts, masonry grid, filters</span></div>
+                <div class="node" data-id="sc-prod" data-links="st-prod"><b>Product</b><span>Gallery, condition, reviews</span></div>
+                <div class="node" data-id="sc-cart" data-links="st-cart"><b>Cart &amp; orders</b><span>Checkout, tracking, invoices</span></div>
+                <div class="node" data-id="sc-chat" data-links="st-user"><b>Messages</b><span>Chat, offers</span></div>
+                <div class="node" data-id="sc-sell" data-links="st-prod"><b>Seller studio</b><span>Listings, inventory, analytics</span></div>
+              </div></li>
+            <li class="arch-row"><p class="label">State</p>
+              <div class="nodes">
+                <div class="node" data-id="st-cart" data-links="be-db"><b>Cart &amp; wishlist</b><span>Riverpod notifiers</span></div>
+                <div class="node" data-id="st-prod" data-links="be-db"><b>Products &amp; orders</b><span>Riverpod providers</span></div>
+                <div class="node" data-id="st-user" data-links="be-auth"><b>Users &amp; vendors</b><span>Riverpod providers</span></div>
+                <div class="node" data-id="st-theme"><b>Theme</b><span>Light / dark</span></div>
+              </div></li>
+            <li class="arch-row"><p class="label">Backend</p>
+              <div class="nodes">
+                <div class="node accent" data-id="be-db" data-links="be-fcm"><b>Supabase</b><span>PostgreSQL, Storage, Edge Functions</span></div>
+                <div class="node" data-id="be-auth"><b>Supabase Auth</b><span>Email, Google, Apple</span></div>
+                <div class="node" data-id="be-fcm"><b>Firebase Cloud Messaging</b><span>Push notifications</span></div>
+              </div></li>
+          </ol>
+        </figure>
+      </div>
+    </section>
+
+    <a class="next-project" href="spm-exam-portal.html" data-title="Exam Portal">
+      <div class="wrap"><p class="label">Next project</p><h2>Scholarship Exam Portal</h2></div>
+    </a>
+  </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap"><span>© 2026 Naveed Islam</span><span>Full Stack Developer · Product Builder</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

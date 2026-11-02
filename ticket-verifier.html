@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ticket Verifier case study — Naveed Islam</title>
+  <meta name="description" content="BookOnZaatio Ticket Verifier: the companion app that validates QR tickets at event entry.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2316140f'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='24' text-anchor='middle' fill='%23d4f15c'%3ENI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.add("motion");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" data-title="Home"><span class="brand-mark" aria-hidden="true">NI</span>Naveed Islam</a>
+      <nav aria-label="Primary">
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#apps">Apps</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="playground.html" data-title="Playground">Play</a></li>
+          <li><a class="nav-cta" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-barba="wrapper">
+  <main id="main" data-barba="container" data-barba-namespace="verifier" style="--tint:#d8cffd">
+
+    <section class="cs-hero" aria-labelledby="cs-title">
+      <div class="wrap">
+        <a class="back" href="index.html#apps" data-title="Home">← All work</a>
+        <div class="cs-hero-grid">
+          <div data-hero>
+            <p class="label">Case study 05 · Offline-first staff app</p>
+            <h1 id="cs-title">Ticket Verifier</h1>
+            <p class="pitch">The gate-side half of BookOnZaatio. It scans tickets with or without internet, and keeps every scanner at the venue in sync over local Wi-Fi.</p>
+            <div class="btn-row">
+              <a class="store" href="https://play.google.com/store/apps/details?id=in.bookonzaatio.ticketverifier" target="_blank" rel="noopener"><span><small>Get it on</small>Google Play</span><span class="sr-only">(opens in new tab)</span></a>
+              <a class="btn btn-ghost" href="bookonzaatio.html" data-title="BookOnZaatio">See the platform <span class="arrow" aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <div class="cs-visual" data-art>
+            <div class="bg-block" aria-hidden="true"></div>
+            <div class="phones-trio">
+              <div class="phone"><div class="screen app-dark"><img src="assets/screens/verifier-event.jpg" alt="Event screen: sold, checked-in and remaining counts, 24 tickets downloaded, auto sync toggle and multi-device sync running as host" width="720" height="1475"></div></div>
+              <div class="phone"><div class="screen app-dark"><img src="assets/screens/verifier-scan.jpg" alt="Scanner in multi-scan mode reading a ticket QR inside the scan frame, with torch, zoom, Auto and Manual modes and manual code entry" width="720" height="1398"></div></div>
+              <div class="phone"><div class="screen app-dark"><img src="assets/screens/verifier-tickets.jpg" alt="Tickets list with search, used, unused and cancelled filters and per-ticket details" width="720" height="1475"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <dl class="facts" data-stagger>
+        <div><dt class="label">Role</dt><dd>Founder &amp; CTO</dd></div>
+        <div><dt class="label">Platform</dt><dd>Flutter · Android</dd></div>
+        <div><dt class="label">Part of</dt><dd>BookOnZaatio</dd></div>
+        <div><dt class="label">Status</dt><dd>Live on Google Play</dd></div>
+      </dl>
+    </div>
+
+    <section class="tour" aria-labelledby="tour-title" data-tour data-duration="24.4" style="--tour-h:1710vh;--screen-bg:#0b0a0d">
+      <div class="wrap tour-sticky">
+        <div class="tour-copy">
+          <p class="label">App tour · <span class="tour-hint">scroll to play</span></p>
+          <h2 id="tour-title">At the gate, <em class="serif-em">in motion</em></h2>
+          <ol class="tour-steps">
+            <li data-start="0"><p class="label">01 — Prepare</p><h3>Download before doors open</h3><p>Pick an event, see sold, checked-in and remaining counts, and download its tickets to the phone, with optional auto sync every minute.</p></li>
+            <li data-start="4.3"><p class="label">02 — Scan</p><h3>Point, scan, next</h3><p>A full-screen scanner with torch and zoom, Auto and Manual modes, and manual code entry when a QR won't read.</p></li>
+            <li data-start="9.2"><p class="label">03 — Multi-device</p><h3>Every gate, one count</h3><p>Turn on multi-device sync and phones on the same Wi-Fi or hotspot find each other, pick a host, and share every scan.</p></li>
+            <li data-start="16.6"><p class="label">04 — Insights</p><h3>Numbers for the organisers</h3><p>The app also carries the numbers: product analytics like users, sessions, conversion and engagement, plus revenue reports.</p></li>
+          </ol>
+          <div class="tour-bar" aria-hidden="true"><i></i></div>
+          <button class="tour-skip" type="button" data-skip-tour>Skip tour <span aria-hidden="true">↓</span></button>
+        </div>
+        <div class="tour-device">
+          <div class="phone"><div class="screen">
+            <video src="assets/video/verifier-tour.mp4" poster="assets/video/verifier-poster.jpg" muted playsinline preload="auto" controls aria-label="Screen recording of the Ticket Verifier app: an event with downloaded tickets, the QR scanner, turning on multi-device sync, and the analytics screen"></video>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="overview">
+      <div class="wrap cs-split" data-reveal>
+        <h2 id="overview">The problem</h2>
+        <div class="prose">
+          <p>Venue Wi-Fi and mobile data fail at the worst moment: when a crowd is at the gate. A scanner that needs the internet for every check stops the queue, and several scanners working offline can each let the same ticket in.</p>
+          <p>Ticket Verifier is built <b>offline-first</b>. Tickets are checked against a copy on the phone, scans queue up and sync when the internet returns, and phones at the same venue share scans with each other over the local network, with <b>no internet needed</b>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="capabilities">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="capabilities">How it works</h2>
+          <div class="prose"><p>Four systems, each designed for a gate with bad signal.</p></div>
+        </div>
+        <ul class="feature-grid" data-stagger>
+          <li><b>Download &amp; auto sync</b><span>Each event's tickets (code, zone, entries, status, event days) are stored on the device. An optional timer re-downloads the list every minute so new bookings arrive before their holders do.</span></li>
+          <li><b>Offline verification</b><span>Scans are checked against the local list: unknown, cancelled and already-used tickets are rejected on the spot, and each code is normalised so spacing and dashes don't matter.</span></li>
+          <li><b>Multi-day events</b><span>For events that run across several days, a ticket can enter once per event day. Scans outside the event's dates are refused.</span></li>
+          <li><b>Pending sync queue</b><span>Offline scans are queued with their event day and pushed to the server in parallel batches when connectivity returns, including a 20-second check for a hotspot that regains data without a network change.</span></li>
+          <li><b>Multi-device sync</b><span>Phones discover each other over mDNS/Bonjour, elect a host, and relay every scan over WebSockets, so a ticket used at one gate is rejected at the others.</span></li>
+          <li><b>Built for a long shift</b><span>The host phone holds a wake lock and a foreground service so sync survives the screen turning off. Scan sounds, a short duplicate-scan cooldown and a recent-scans history keep the line moving.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="reports">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="reports">Analytics &amp; revenue</h2>
+          <div class="prose"><p>The same app doubles as the business dashboard. Organisers see their own events; admins see the whole platform, with any date range and a comparison against the previous period.</p></div>
+        </div>
+        <ol class="flow" style="--steps:2" data-stagger>
+          <li>
+            <div class="phone"><div class="screen app-dark"><img src="assets/screens/verifier-analytics.jpg" alt="Product Analytics screen: users, sessions, page views, engaged sessions, conversion rate and purchases with an hourly chart" loading="lazy" width="720" height="1475"></div></div>
+            <h3>Product analytics</h3><p>Users, sessions, page views, engaged sessions, conversion rate and purchases, with trend charts, a conversion funnel, acquisition and engagement breakdowns.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen app-dark"><img src="assets/screens/verifier-revenue.jpg" alt="Revenue screen: gross, excluding GST and GST collected totals, a 30-day revenue trend and revenue by event" loading="lazy" width="720" height="1475"></div></div>
+            <h3>Revenue</h3><p>Gross, GST, platform fees, refunds and net to organisers, with a revenue trend and breakdowns by event, show, organiser, ticket type, coupon, payment method, city and state.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="arch">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="arch">Architecture</h2>
+          <div class="prose"><p>A Flutter app that treats the phone as the source of truth at the gate, the local network as the shared state between gates, and the BookOnZaatio backend as the record once the internet is available.</p></div>
+        </div>
+        <figure class="arch" data-reveal>
+          <figcaption><span class="label"><b>System overview</b></span><span class="label">Fig. 04</span></figcaption>
+          <ol class="arch-rows">
+            <li class="arch-row"><p class="label">On the phone</p>
+              <div class="nodes">
+                <div class="node dark" data-id="scan" data-links="store host"><b>Scanner</b><span>Camera QR, manual entry, sounds, cooldown</span></div>
+                <div class="node" data-id="store" data-links="queue"><b>Local ticket store</b><span>Tickets per event, recent scans, device scan count</span></div>
+                <div class="node accent" data-id="queue" data-links="api"><b>Pending queue</b><span>CODE or CODE@day, flushed in batches of 8</span></div>
+                <div class="node" data-id="conn" data-links="queue"><b>Connectivity</b><span>Network changes, reachability check, online/offline override</span></div>
+              </div></li>
+            <li class="arch-row"><p class="label">Venue network</p>
+              <div class="nodes">
+                <div class="node" data-id="mdns" data-links="host"><b>mDNS discovery</b><span><code>_ticketverifier._tcp</code>, scoped to the event</span></div>
+                <div class="node dark" data-id="host" data-links="clients"><b>Host phone</b><span>WebSocket hub, relays scans, foreground service</span></div>
+                <div class="node" data-id="clients"><b>Client phones</b><span>Send scans, receive peers' scans and totals</span></div>
+              </div></li>
+            <li class="arch-row"><p class="label">Cloud</p>
+              <div class="nodes">
+                <div class="node accent" data-id="api" data-links="supa"><b>BookOnZaatio API</b><span>Next.js: events, ticket download, verify, analytics and revenue reports</span></div>
+                <div class="node" data-id="supa"><b>Supabase</b><span>Staff sign-in and the platform database</span></div>
+                <div class="node" data-id="fcm"><b>Firebase Cloud Messaging</b><span>New-booking alerts for staff</span></div>
+              </div></li>
+          </ol>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="lan">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="lan">Inside multi-device sync</h2>
+          <div class="prose"><p>No server, no setup: every phone runs the same code and they work out who leads.</p></div>
+        </div>
+        <ol class="flow" style="--steps:4" data-stagger>
+          <li><h3>Discover</h3><p>Each phone listens on the local network for 3 seconds for other scanners advertising the same event.</p></li>
+          <li><h3>Elect</h3><p>The phone with the lowest device ID becomes host and opens a WebSocket hub. If a lower ID appears later, the host steps down.</p></li>
+          <li><h3>Share</h3><p>Scans go to the host and are relayed to every other phone. Late joiners get today's used tickets and every device's scan count.</p></li>
+          <li><h3>Recover</h3><p>If the host drops, clients re-elect after a 1–3 second random delay. Staff can also hand the host role to another phone, or connect by IP when a hotspot blocks discovery.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <a class="next-project" href="pratidin-news.html" data-title="Pratidin">
+      <div class="wrap"><p class="label">Next project</p><h2>Pratidin news apps</h2></div>
+    </a>
+  </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap"><span>© 2026 Naveed Islam</span><span>Full Stack Developer · Product Builder</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Naveed Islam — Full Stack Developer</title>
+  <meta name="description" content="Naveed Islam is a full stack developer and Founder &amp; CTO of BookOnZaatio, building production web and mobile products end to end.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2316140f'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='24' text-anchor='middle' fill='%23d4f15c'%3ENI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.add("motion");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" data-title="Home"><span class="brand-mark" aria-hidden="true">NI</span>Naveed Islam</a>
+      <nav aria-label="Primary">
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#apps">Apps</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="playground.html" data-title="Playground">Play</a></li>
+          <li><a class="nav-cta" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-barba="wrapper">
+  <main id="main" data-barba="container" data-barba-namespace="home">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div data-hero>
+          <p class="label"><b>Naveed Islam</b> — Full Stack Developer · Founder &amp; CTO, BookOnZaatio</p>
+          <h1 id="hero-title" data-split>Building real products, <em>end&nbsp;to&nbsp;end.</em></h1>
+          <p class="lede">I design and ship production-grade platforms, from system architecture and backend APIs to frontend interfaces, mobile apps and cloud infrastructure.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#work">Explore my work <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <ul class="hero-meta" aria-label="Core stack">
+            <li class="chip">Next.js</li><li class="chip">Node.js</li><li class="chip">PostgreSQL</li><li class="chip">Supabase</li><li class="chip">Flutter</li><li class="chip">AWS</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true" data-art>
+          <div class="dots"></div>
+          <div class="sun" data-float></div>
+          <div class="ticket" data-float>
+            <div class="ticket-main">
+              <div class="t-kicker">ADMIT ONE · LIVE EVENT</div>
+              <div class="t-title">Discover. Book. Enter.</div>
+              <div class="t-row"><span>ROW F</span><span>SEAT 12</span><span>GATE 2</span></div>
+            </div>
+            <div class="ticket-stub"><div class="qr"><i></i></div></div>
+          </div>
+          <div class="layers">
+            <div class="layer">UI · NEXT.JS / FLUTTER</div>
+            <div class="layer">API · NODE.JS</div>
+            <div class="layer">DATA · POSTGRES</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <section id="work" class="rule" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="label">01 — Featured project</p>
+          <h2 id="work-title">Selected <em class="serif-em">work</em></h2>
+        </div>
+
+        <div class="featured-grid">
+          <div class="device-stage" data-reveal>
+            <div class="bg-block" aria-hidden="true"></div>
+            <div class="laptop">
+              <div class="lid"><div class="screen"><div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span><em>bookonzaatio.in</em></div><img src="assets/screens/boz-web.jpg" alt="BookOnZaatio website home page with event search and featured event posters" loading="lazy" width="1440" height="900"></div></div>
+              <div class="base" aria-hidden="true"></div>
+            </div>
+            <div class="phone" data-parallax="10"><div class="screen"><img src="assets/screens/boz-app-home.jpg" alt="BookOnZaatio app home screen with featured events" loading="lazy"></div></div>
+          </div>
+
+          <div class="featured-copy" data-reveal>
+            <p class="label">Event &amp; ticketing platform · Web, iOS, Android</p>
+            <h3>BookOnZaatio</h3>
+            <p class="role">Founder &amp; CTO</p>
+            <p>A BookMyShow-style platform for discovering events, booking tickets and getting in with a QR code, plus community features. I architected and built the full stack: web, mobile apps, role-based dashboards and the APIs behind them.</p>
+            <ul class="pillars">
+              <li><b>Discover</b><span>Event listings sped up with Redis caching</span></li>
+              <li><b>Book</b><span>Dynamic booking, seat selection, tiered pricing</span></li>
+              <li><b>Enter</b><span>QR tickets with real-time validation</span></li>
+              <li><b>Run</b><span>Dashboards for admins, organisers, moderators</span></li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="bookonzaatio.html" data-title="BookOnZaatio">Read the case study <span class="arrow" aria-hidden="true">→</span></a>
+              <a class="store light" href="https://bookonzaatio.in" target="_blank" rel="noopener"><span><small>Visit</small>bookonzaatio.in</span><span class="sr-only">(opens in new tab)</span></a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.bookonzaatio.boz_customer" target="_blank" rel="noopener"><span><small>Get it on</small>Google Play</span><span class="sr-only">(opens in new tab)</span></a>
+              <a class="store" href="https://apps.apple.com/in/app/bookonzaatio-event-tickets/id6817386061" target="_blank" rel="noopener"><span><small>Download on the</small>App Store</span><span class="sr-only">(opens in new tab)</span></a>
+            </div>
+          </div>
+        </div>
+
+        <figure class="arch" data-reveal>
+          <figcaption><span class="label"><b>Full-stack architecture</b> — BookOnZaatio</span><span class="label">Fig. 01</span></figcaption>
+          <ol class="arch-rows">
+            <li class="arch-row"><p class="label">Clients</p>
+              <div class="nodes">
+                <div class="node" data-id="web" data-links="api"><b>Web</b><span>Next.js, for customers</span></div>
+                <div class="node" data-id="app" data-links="api"><b>Customer app</b><span>iOS &amp; Android</span></div>
+                <div class="node" data-id="verifier" data-links="api"><b>Ticket Verifier</b><span>QR scanning at entry</span></div>
+                <div class="node" data-id="dash" data-links="api"><b>Dashboards</b><span>Admin · Organiser · Moderator</span></div>
+              </div></li>
+            <li class="arch-row"><p class="label">API</p>
+              <div class="nodes"><div class="node dark" data-id="api" data-links="db redis"><b>Next.js API layer</b><span>Booking, QR validation, scheduling, pricing tiers, analytics. Tuned for low latency.</span></div></div></li>
+            <li class="arch-row"><p class="label">Data</p>
+              <div class="nodes">
+                <div class="node accent" data-id="db"><b>Supabase · PostgreSQL</b><span>Events, bookings, users, roles</span></div>
+                <div class="node" data-id="redis"><b>Upstash Redis</b><span>Caches event listings, reduces DB load</span></div>
+              </div></li>
+          </ol>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Other apps -->
+    <section id="apps" class="rule" aria-labelledby="apps-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="label">02 — Published apps &amp; platforms</p>
+          <div>
+            <h2 id="apps-title">More <em class="serif-em">builds</em></h2>
+          </div>
+        </div>
+
+        <div class="work-grid" data-stagger>
+          <article class="card wide" style="--card-tint:#cfe6c4">
+            <div class="card-art" aria-hidden="true">
+              <div class="laptop"><div class="lid"><div class="screen"><img src="assets/screens/engage-overview.jpg" alt="" loading="lazy" width="1400" height="998"></div></div><div class="base"></div></div>
+            </div>
+            <div class="card-body">
+              <p class="label">Next.js · PostgreSQL · Coolify</p>
+              <h3>BOZ Engage</h3>
+              <p>The in-house CRM and marketing platform for BookOnZaatio: Customer 360, consent, audiences without SQL, approved campaigns and automated journeys for push and email.</p>
+              <div class="card-meta">
+                <a class="card-cta stretched" href="boz-engage.html" data-title="BOZ Engage">View case study</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" style="--card-tint:#ffd9d6">
+            <div class="card-art" aria-hidden="true">
+              <div class="phone"><div class="screen"><img src="assets/screens/toflip-feed.jpg" alt="" loading="lazy" width="720" height="1565"></div></div>
+            </div>
+            <div class="card-body">
+              <p class="label">Flutter · Supabase · Solo developer</p>
+              <h3>ToFlip</h3>
+              <p>A multi-vendor thrift fashion marketplace. Buyers discover pre-loved clothing in a social feed; sellers list items, manage inventory and chat with buyers.</p>
+              <div class="card-meta">
+                <a class="card-cta stretched" href="toflip.html" data-title="ToFlip">View case study</a>
+                <a class="store" href="https://play.google.com/store/apps/details?id=in.toflip.app" target="_blank" rel="noopener"><span><small>Get it on</small>Google Play</span><span class="sr-only">(opens in new tab)</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" style="--card-tint:#dbe4f3">
+            <div class="card-art" aria-hidden="true">
+              <div class="laptop"><div class="lid"><div class="screen"><img src="assets/screens/spm-web.jpg" alt="" loading="lazy"></div></div><div class="base"></div></div>
+            </div>
+            <div class="card-body">
+              <p class="label">Next.js · Web · SPM IAS Academy</p>
+              <h3>Scholarship Exam Portal</h3>
+              <p>An online exam and scholarship platform for NEET, JEE and Integrated course aspirants, with real-time result processing, supporting 5,000+ users.</p>
+              <div class="card-meta">
+                <a class="card-cta stretched" href="spm-exam-portal.html" data-title="Exam Portal">View case study</a>
+                <a class="store light" href="https://exam.spmandlalans.com/" target="_blank" rel="noopener"><span><small>Visit</small>exam.spmandlalans.com</span><span class="sr-only">(opens in new tab)</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" style="--card-tint:#e4ddff">
+            <div class="card-art" aria-hidden="true">
+              <div class="phone"><div class="screen"><img src="assets/screens/verifier-event.jpg" alt="" loading="lazy" width="720" height="1475"></div></div>
+            </div>
+            <div class="card-body">
+              <p class="label">Flutter · Offline sync · Part of BookOnZaatio</p>
+              <h3>BookOnZaatio Ticket Verifier</h3>
+              <p>The offline-first staff app for event entry. It verifies QR tickets without internet, keeps every scanner at the venue in sync over local Wi-Fi, and carries analytics and revenue reports.</p>
+              <div class="card-meta">
+                <a class="card-cta stretched" href="ticket-verifier.html" data-title="Ticket Verifier">View case study</a>
+                <a class="store" href="https://play.google.com/store/apps/details?id=in.bookonzaatio.ticketverifier" target="_blank" rel="noopener"><span><small>Get it on</small>Google Play</span><span class="sr-only">(opens in new tab)</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" style="--card-tint:#ece6da">
+            <div class="card-art" aria-hidden="true">
+              <div class="phone"><div class="screen fit app-dark"><img src="assets/screens/pratidin-v2-home.jpg" alt="" loading="lazy" width="720" height="1462"></div></div>
+            </div>
+            <div class="card-body">
+              <p class="label">Flutter · RSS · Firebase</p>
+              <h3>Asomiya Pratidin &amp; Pratidin&nbsp;Time</h3>
+              <p>Two Android news apps for Asomiya Pratidin and Pratidin Time, built in Flutter on RSS feeds and Firebase.</p>
+              <div class="card-meta">
+                <a class="card-cta stretched" href="pratidin-news.html" data-title="Pratidin">View case study</a>
+                <span class="btn-row">
+                  <a class="store" href="https://play.google.com/store/apps/details?id=com.asomiyapratidin.news" target="_blank" rel="noopener"><span><small>Google Play</small>Asomiya Pratidin</span><span class="sr-only">(opens in new tab)</span></a>
+                  <a class="store" href="https://play.google.com/store/apps/details?id=com.pratidin.news" target="_blank" rel="noopener"><span><small>Google Play</small>Pratidin Time</span><span class="sr-only">(opens in new tab)</span></a>
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + experience -->
+    <section id="about" class="rule" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="label">03 — About &amp; experience</p>
+          <h2 id="about-title">About <em class="serif-em">me</em></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-intro" data-reveal>
+            <p>Full stack developer and product builder. I like owning the whole system, from architecture to the interface, with a focus on performance, scalability and product thinking.</p>
+            <div class="edu">
+              <span class="label">Education</span>
+              <b>B.Tech, Electronics &amp; Telecommunication Engineering</b>
+              Assam Engineering College, Jalukbari · 2024 · CGPA 8.24
+            </div>
+          </div>
+
+          <ol class="timeline" data-stagger>
+            <li class="job">
+              <p class="label">Sep 2025</p>
+              <div>
+                <h3>Senior Developer — <span class="co">Littlebox India</span></h3>
+                <ul>
+                  <li>Architected a serverless backend on AWS Lambda and DynamoDB, reducing infrastructure cost by <span data-count="35">35</span>%</li>
+                  <li>Built event-driven pipelines with AWS SQS and DynamoDB Streams for asynchronous processing</li>
+                  <li>Implemented caching strategies that cut API latency and improved scalability</li>
+                  <li>Shipped production-ready React SSR modules on Lambda, improving performance under load</li>
+                  <li>Designed fault-tolerant, high-concurrency workflows</li>
+                  <li>Integrated n8n automation to streamline operational workflows</li>
+                </ul>
+              </div>
+            </li>
+            <li class="job">
+              <p class="label">2025</p>
+              <div>
+                <h3>Full Stack Developer — <span class="co">SPM IAS Academy</span></h3>
+                <ul>
+                  <li>Built a full-stack exam and scholarship platform (SPM &amp; Lalans) with real-time result processing, supporting 5,000+ users</li>
+                  <li>Designed backend APIs optimised for high-volume, concurrent user interactions</li>
+                  <li>Built a custom WordPress plugin that checks a Google Sheet for new monthly magazine issues and updates the website automatically</li>
+                  <li>Implemented structured data systems and optimised user interaction flows</li>
+                </ul>
+                <a class="link-arrow" href="spm-exam-portal.html" data-title="Exam Portal">Exam portal case study →</a>
+              </div>
+            </li>
+            <li class="job">
+              <p class="label">2022 – 2025</p>
+              <div>
+                <h3>Web Developer — <span class="co">Car Squad India</span></h3>
+                <ul>
+                  <li>Developed internal tools and web platforms supporting core business operations</li>
+                  <li>Built backend integrations and automation workflows</li>
+                  <li>Improved system efficiency through optimised data handling</li>
+                </ul>
+                <a class="link-arrow" href="https://www.carsquadindia.com/" target="_blank" rel="noopener">Visit carsquadindia.com ↗<span class="sr-only"> (opens in new tab)</span></a>
+              </div>
+            </li>
+            <li class="job">
+              <p class="label">2021 – 2022</p>
+              <div>
+                <h3>Software Developer Trainee — <span class="co">Webworx</span></h3>
+                <ul>
+                  <li>Built and deployed Flutter mobile applications to production</li>
+                  <li>Developed a Node.js / MongoDB MIS system, improving operational efficiency</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="rule" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="label">04 — Toolkit</p>
+          <h2 id="skills-title">Skills</h2>
+        </div>
+        <div class="skills" data-stagger>
+          <div class="skill-col"><p class="label">01</p><h3>Frontend</h3><ul><li>Next.js</li><li>React</li><li>React SSR</li><li>TailwindCSS</li></ul></div>
+          <div class="skill-col"><p class="label">02</p><h3>Backend</h3><ul><li>Node.js</li><li>Express</li><li>REST APIs</li><li>WordPress plugins</li><li>n8n automation</li></ul></div>
+          <div class="skill-col"><p class="label">03</p><h3>Data</h3><ul><li>PostgreSQL</li><li>Supabase</li><li>MongoDB</li><li>DynamoDB</li><li>Redis (Upstash)</li><li>PostHog</li></ul></div>
+          <div class="skill-col"><p class="label">04</p><h3>Mobile</h3><ul><li>Flutter</li><li>Riverpod</li><li>Firebase</li><li>Fastlane</li><li>Shorebird (OTA)</li><li>Play Store &amp; App Store releases</li></ul></div>
+          <div class="skill-col"><p class="label">05</p><h3>Cloud &amp; infra</h3><ul><li>AWS Lambda, S3, EC2</li><li>AWS SQS, DynamoDB Streams</li><li>Docker</li><li>Proxmox</li><li>Coolify</li><li>Vercel</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Playground teaser -->
+    <section class="play-teaser rule" aria-labelledby="play-title">
+      <div class="wrap play-teaser-inner" data-reveal>
+        <div>
+          <p class="label">Off the clock</p>
+          <h2 id="play-title">Need a break? <em class="serif-em">Play.</em></h2>
+          <p>Two tiny games built for this site: scan tickets at a busy gate, or match thrifted pairs.</p>
+        </div>
+        <a class="btn btn-primary" href="playground.html" data-title="Playground">Open the playground <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="wrap" data-reveal>
+        <p class="label">05 — Contact</p>
+        <h2 id="contact-title">Have something to <em class="serif-em">build?</em></h2>
+        <a class="mail" href="mailto:naveedislam545@gmail.com">naveedislam545@gmail.com</a>
+        <div class="contact-row">
+          <a class="btn btn-ghost" style="border-color:var(--lime);color:var(--lime)" href="mailto:naveedislam545@gmail.com">Send an email <span class="arrow" aria-hidden="true">→</span></a>
+          <button class="copy-btn" type="button" data-copy="naveedislam545@gmail.com">Copy address</button>
+          <span class="copy-status" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap"><span>© 2026 Naveed Islam</span><span>Full Stack Developer · Product Builder</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

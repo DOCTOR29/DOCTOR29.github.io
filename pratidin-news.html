@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pratidin news apps case study — Naveed Islam</title>
+  <meta name="description" content="Asomiya Pratidin and Pratidin Time: Flutter news apps built on RSS feeds and Firebase.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2316140f'/%3E%3Ctext x='32' y='41' font-family='monospace' font-size='24' text-anchor='middle' fill='%23d4f15c'%3ENI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>matchMedia("(prefers-reduced-motion: reduce)").matches || document.documentElement.classList.add("motion");</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="curtain" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" data-title="Home"><span class="brand-mark" aria-hidden="true">NI</span>Naveed Islam</a>
+      <nav aria-label="Primary">
+        <button class="menu-btn" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#apps">Apps</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="playground.html" data-title="Playground">Play</a></li>
+          <li><a class="nav-cta" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-barba="wrapper">
+  <main id="main" data-barba="container" data-barba-namespace="pratidin" style="--tint:#f3c9cc">
+
+    <section class="cs-hero" aria-labelledby="cs-title">
+      <div class="wrap">
+        <a class="back" href="index.html#apps" data-title="Home">← All work</a>
+        <div class="cs-hero-grid">
+          <div data-hero>
+            <p class="label">Case study 06 · News apps</p>
+            <h1 id="cs-title">Asomiya Pratidin &amp; Pratidin&nbsp;Time</h1>
+            <p class="pitch">Two Android news apps for two newsrooms, built in Flutter.</p>
+            <div class="btn-row">
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.asomiyapratidin.news" target="_blank" rel="noopener"><span><small>Google Play</small>Asomiya Pratidin</span><span class="sr-only">(opens in new tab)</span></a>
+              <a class="store" href="https://play.google.com/store/apps/details?id=com.pratidin.news" target="_blank" rel="noopener"><span><small>Google Play</small>Pratidin Time</span><span class="sr-only">(opens in new tab)</span></a>
+            </div>
+          </div>
+          <div class="cs-visual" data-art>
+            <div class="bg-block" aria-hidden="true"></div>
+            <div class="phones-trio">
+              <div class="phone"><div class="screen fit app-dark"><img src="assets/screens/pratidin-v2-home.jpg" alt="Redesigned Pratidin Time home in a dark theme: weather, category tiles, Breaking News carousel and Top Stories" width="720" height="1462"></div></div>
+              <div class="phone"><div class="screen fit"><img src="assets/screens/asomiya-home.jpg" alt="Asomiya Pratidin home in Assamese: top-story carousel with category label, then Assam and Guwahati sections" width="720" height="1492"></div></div>
+              <div class="phone"><div class="screen fit app-dark"><img src="assets/screens/pratidin-v2-article.jpg" alt="Redesigned article body with listen, share and text-size controls and a Read Next list" width="720" height="1462"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <dl class="facts" data-stagger>
+        <div><dt class="label">Apps</dt><dd>2 published</dd></div>
+        <div><dt class="label">Platform</dt><dd>Flutter · Android</dd></div>
+        <div><dt class="label">Content</dt><dd>RSS feeds</dd></div>
+        <div><dt class="label">Services</dt><dd>Firebase</dd></div>
+      </dl>
+    </div>
+
+    <section class="cs-section" aria-labelledby="overview">
+      <div class="wrap cs-split" data-reveal>
+        <h2 id="overview">The build</h2>
+        <div class="prose">
+          <p>Asomiya Pratidin and Pratidin Time each have their own Android app on Google Play. I built both in <b>Flutter</b>. The apps pull stories from the newsrooms' <b>RSS feeds</b> and use <b>Firebase</b>.</p>
+          <p><b>Asomiya Pratidin</b> serves readers in Assamese; <b>Pratidin Time</b> publishes in English and has been through two interfaces, the first release and a full redesign. All three are shown below.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="asomiya">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="asomiya">Asomiya Pratidin</h2>
+          <div class="prose"><p>An Assamese-language reader: big imagery for the top stories, sections laid out like the paper, and long-form text set for comfortable reading in Assamese script.</p></div>
+        </div>
+        <ol class="flow" data-stagger>
+          <li>
+            <div class="phone"><div class="screen fit"><img src="assets/screens/asomiya-home.jpg" alt="" loading="lazy" width="720" height="1492"></div></div>
+            <h3>Home</h3><p>A swipeable carousel of top stories with their section label, followed by section rows such as Assam and Guwahati, each with a More link.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen fit"><img src="assets/screens/asomiya-article.jpg" alt="" loading="lazy" width="720" height="1492"></div></div>
+            <h3>Article</h3><p>A full-bleed lead image and headline, then the source and how long ago it was published, the story text and what to read next.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen fit"><img src="assets/screens/asomiya-section.jpg" alt="" loading="lazy" width="720" height="1492"></div></div>
+            <h3>Sections</h3><p>Each section lists its stories with a thumbnail, headline, opening lines and a relative timestamp.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="redesign">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="redesign">Pratidin Time, redesigned</h2>
+          <div class="prose"><p>A rebuilt interface around reading: a dark theme, image-led navigation, and an article view tuned for long reads.</p></div>
+        </div>
+        <ol class="flow" data-stagger>
+          <li>
+            <div class="phone"><div class="screen fit app-dark"><img src="assets/screens/pratidin-v2-home.jpg" alt="" loading="lazy" width="720" height="1462"></div></div>
+            <h3>Home</h3><p>Weather in the header, photo tiles for sections like Pratidin Exclusive, Sports and World, a swipeable Breaking News carousel and Top Stories with timestamps.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen fit app-dark"><img src="assets/screens/pratidin-v2-story.jpg" alt="" loading="lazy" width="720" height="1462"></div></div>
+            <h3>Article</h3><p>Section label and reading time, a lead image, publish date and source, then a large serif headline and body.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen fit app-dark"><img src="assets/screens/pratidin-v2-article.jpg" alt="" loading="lazy" width="720" height="1462"></div></div>
+            <h3>Read on</h3><p>Listen, share and text-size controls stay in the toolbar, and Read Next suggests the following story.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="inside">
+      <div class="wrap">
+        <div class="cs-split" data-reveal>
+          <h2 id="inside">Pratidin Time, first version</h2>
+          <div class="prose"><p>The original Pratidin Time app: live coverage up front, every section one tap away, and settings that let readers make the app their own.</p></div>
+        </div>
+        <ol class="flow" style="--steps:4" data-stagger>
+          <li>
+            <div class="phone"><div class="screen fit"><img src="assets/screens/pratidin-home.jpg" alt="" loading="lazy" width="720" height="1418"></div></div>
+            <h3>Home</h3><p>A scrolling headline ticker, local weather, the Live TV stream and a Breaking News carousel.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen fit"><img src="assets/screens/pratidin-categories.jpg" alt="" loading="lazy" width="720" height="1298"></div></div>
+            <h3>Categories</h3><p>Every desk in a grid, from Assam and Guwahati News to National, World, Business, Sports and Technology.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen fit"><img src="assets/screens/pratidin-settings.jpg" alt="" loading="lazy" width="720" height="1418"></div></div>
+            <h3>Make it yours</h3><p>App language, theme, article font size, text-to-speech, push notifications on or off, followed topics and bookmarks.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen fit"><img src="assets/screens/pratidin-login.jpg" alt="" loading="lazy" width="720" height="1418"></div></div>
+            <h3>Accounts</h3><p>Sign in with email and password, Google or a phone number, with language choice right on the login screen.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-section" aria-labelledby="hood">
+      <div class="wrap">
+        <div class="cs-split" data-reveal><h2 id="hood">Under the hood</h2></div>
+        <figure class="arch" data-reveal>
+          <figcaption><span class="label"><b>Content pipeline</b></span><span class="label">Fig. 05</span></figcaption>
+          <ol class="arch-rows">
+            <li class="arch-row"><p class="label">Source</p><div class="nodes"><div class="node accent" data-id="rss" data-links="app"><b>Newsroom RSS feeds</b><span>Asomiya Pratidin · Pratidin Time</span></div></div></li>
+            <li class="arch-row"><p class="label">App</p><div class="nodes"><div class="node dark" data-id="app" data-links="fb"><b>Flutter</b><span>Home, categories, articles, settings</span></div><div class="node" data-id="fb"><b>Firebase</b><span>App services</span></div></div></li>
+          </ol>
+        </figure>
+      </div>
+    </section>
+
+    <a class="next-project" href="bookonzaatio.html" data-title="BookOnZaatio">
+      <div class="wrap"><p class="label">Back to the start</p><h2>BookOnZaatio</h2></div>
+    </a>
+  </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap"><span>© 2026 Naveed Islam</span><span>Full Stack Developer · Product Builder</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
