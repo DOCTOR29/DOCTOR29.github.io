@@ -51,10 +51,10 @@
             <li class="chip">Next.js</li><li class="chip">Node.js</li><li class="chip">PostgreSQL</li><li class="chip">Supabase</li><li class="chip">Flutter</li><li class="chip">AWS</li>
           </ul>
         </div>
-        <div class="hero-art" aria-hidden="true" data-art>
-          <div class="dots"></div>
-          <div class="sun" data-float></div>
-          <div class="ticket" data-float>
+        <div class="hero-art" data-art>
+          <div class="dots" aria-hidden="true"></div>
+          <div class="sun" aria-hidden="true" data-float></div>
+          <div class="ticket" aria-hidden="true" data-float>
             <div class="ticket-main">
               <div class="t-kicker">ADMIT ONE · LIVE EVENT</div>
               <div class="t-title">Discover. Book. Enter.</div>
@@ -62,10 +62,19 @@
             </div>
             <div class="ticket-stub"><div class="qr"><i></i></div></div>
           </div>
-          <div class="layers">
-            <div class="layer">UI · NEXT.JS / FLUTTER</div>
-            <div class="layer">API · NODE.JS</div>
-            <div class="layer">DATA · POSTGRES</div>
+          <div class="layers" aria-label="My stack, tap a layer to open it">
+            <details class="layer" name="stack">
+              <summary>UI · NEXT.JS / FLUTTER</summary>
+              <ul class="layer-cards"><li style="--i:0">Next.js</li><li style="--i:1">React</li><li style="--i:2">Flutter</li><li style="--i:3">Tailwind</li><li style="--i:4">Riverpod</li></ul>
+            </details>
+            <details class="layer" name="stack">
+              <summary>API · NODE.JS</summary>
+              <ul class="layer-cards"><li style="--i:0">Node.js</li><li style="--i:1">Express</li><li style="--i:2">REST APIs</li><li style="--i:3">n8n</li><li style="--i:4">AWS Lambda</li></ul>
+            </details>
+            <details class="layer" name="stack">
+              <summary>DATA · POSTGRES</summary>
+              <ul class="layer-cards"><li style="--i:0">PostgreSQL</li><li style="--i:1">Supabase</li><li style="--i:2">Redis</li><li style="--i:3">MongoDB</li><li style="--i:4">DynamoDB</li></ul>
+            </details>
           </div>
         </div>
       </div>
@@ -196,6 +205,7 @@
               <div class="card-meta">
                 <a class="card-cta stretched" href="ticket-verifier.html" data-title="Ticket Verifier">View case study</a>
                 <a class="store" href="https://play.google.com/store/apps/details?id=in.bookonzaatio.ticketverifier" target="_blank" rel="noopener"><span><small>Get it on</small>Google Play</span><span class="sr-only">(opens in new tab)</span></a>
+                <a class="store" href="https://apps.apple.com/in/app/ticket-verifier/id6818544232" target="_blank" rel="noopener"><span><small>Download on the</small>App Store</span><span class="sr-only">(opens in new tab)</span></a>
               </div>
             </div>
           </article>

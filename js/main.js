@@ -158,6 +158,16 @@
     scope.querySelectorAll(".card").forEach((el) => tilt(el, 3));
     scope.querySelectorAll(".device-stage, .cs-visual").forEach((el) => tilt(el, 4));
 
+    // Stack cards open on hover; tap/keyboard still toggle via native <details>.
+    scope.querySelectorAll(".layers").forEach((stack) => {
+      stack.querySelectorAll(".layer").forEach((d) => {
+        d.addEventListener("pointerenter", () => (d.open = true));
+        // Mouse click would close the card hover just opened; keyboard clicks (detail 0) still toggle.
+        d.querySelector("summary").addEventListener("click", (e) => e.detail && e.preventDefault());
+      });
+      stack.addEventListener("pointerleave", () => stack.querySelectorAll(".layer[open]").forEach((d) => (d.open = false)));
+    });
+
     // Hero art: layers drift at different depths with the pointer.
     const hero = scope.querySelector(".hero");
     if (hero) {
