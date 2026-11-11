@@ -73,7 +73,7 @@ em.serif, .serif-em { font-family: var(--serif); font-style: italic; }
 }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 600; letter-spacing: -0.01em; }
-.brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: var(--lime); font: 500 12px var(--mono); }
+.brand-mark { object-fit: cover; border: 1px solid var(--ink); display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--ink); color: var(--lime); font: 500 12px var(--mono); }
 .nav-list { display: flex; gap: 28px; list-style: none; align-items: center; }
 .nav-list a { text-decoration: none; font-size: 15px; color: var(--muted); }
 .nav-list a:hover { color: var(--ink); }
@@ -259,7 +259,8 @@ section { padding-block: clamp(80px, 12vw, 150px); }
 /* ---------- Experience ---------- */
 .about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(32px, 6vw, 96px); }
 .about-intro p { font: 400 clamp(26px, 3vw, 36px)/1.25 var(--serif); }
-.about-intro .edu { margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+.about-intro .portrait { width: 100%; max-width: 340px; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid var(--ink); border-radius: var(--radius); box-shadow: 8px 8px 0 var(--tint); margin-bottom: 32px; transform: rotate(-2deg); }
+.about-intro .edu {margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
 .about-intro .edu b { color: var(--ink); font-weight: 600; display: block; }
 .timeline { list-style: none; border-top: 1px solid var(--ink); }
 .job { display: grid; grid-template-columns: 140px 1fr; gap: 20px; padding: 28px 0; border-bottom: 1px solid var(--line); }
